@@ -33,7 +33,7 @@
     
     .header-content {
         position: absolute;
-        top: 60%;
+        top: 50%;
         padding: 0 50px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -46,6 +46,7 @@
     }
     #title {
         padding-top: 1rem;
+        
         
     }
     #mission-statement {
