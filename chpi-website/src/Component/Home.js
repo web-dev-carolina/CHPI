@@ -4,7 +4,13 @@ import '../CSS/Home.css';
 function Home() {
     return (
         <div className="home">
-            <h1>hello</h1>
+            <div className="header-content">
+                <div className="header-content-inner">
+                    <h1 id="name">Carolina Homelessness Prevention Initiative</h1>
+                    
+                    <h4 id="mission-statement">Diversion. Education. Justice.</h4>
+                </div>
+            </div>
         </div>
     )
 }

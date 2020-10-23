@@ -1,3 +1,62 @@
 .home {
     margin-top: 75px;
+    position: relative;
+    min-height: calc(100vh + 10px);
+    text-align: center;
+    color: var(--text-1);
+    background-image: url(../Images/headerBackground.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.header-content {
+    position: relative;
+    width: 100%;
+    padding: 50% 15px 0 15px;
+    text-align: center;
+}
+
+#name {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+#mission-statement {
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 760px) {
+    
+    .header-content {
+        position: absolute;
+        top: 60%;
+        padding: 0 50px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .header-content-inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;
+    }
+    #title {
+        padding-top: 1rem;
+        
+    }
+    #mission-statement {
+        font-size: 2rem;
+    }
+}
+
+/* For phones like iphone 5 */
+@media only screen and (max-width: 320px){
+    .home {
+        width: 110%;
+    }
+    
 }
