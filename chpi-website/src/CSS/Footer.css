@@ -1,0 +1,17 @@
+.footer {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+    width: 100%;
+    z-index: 999;  
+    
+}
+
+.footer p {
+    color: var(--text-1)
+}

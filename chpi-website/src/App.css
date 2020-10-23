@@ -7,9 +7,10 @@
   --text-1: white;
   --text-2: black;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
   
 }
 
 a {
   text-decoration: none;
-}
+} 

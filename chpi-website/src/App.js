@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './Component/Navbar.js';
 import Home from './Component/Home.js';
 import About from './Component/About.js';
-import Homelessness from './Component/Homelessness.js';
+import Homelessness from './Component/Homelessness.js'; 
 import Testimonials from './Component/Testimonials.js';
 import Contact from './Component/Contact.js';
 import Footer from './Component/Footer.js';
@@ -26,6 +26,8 @@ function App() {
       <Footer />
       
     </Router>
+
+  
 
   );
 }
