@@ -75,7 +75,7 @@
 
  .nav-menu {
     text-align: center;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     top: 75px;
@@ -114,5 +114,5 @@
         transition: all 0.5s ease;
         z-index: 1;
         pointer-events: all;
+    }
 }
- }
