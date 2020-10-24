@@ -56,6 +56,10 @@
     transition: color .2s ease-in-out; 
  }
 
+ .link:active {
+    text-decoration: underline;
+ }
+
  #right-border {
      border-right: solid;
      border-width: 1.2px;
