@@ -1,0 +1,26 @@
+.footer {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+    width: 100%;
+    z-index: 999;  
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer p {
+    color: var(--text-1)
+}
+
+/* For phones like iphone 5 */
+@media only screen and (max-width: 320px){
+    .footer {
+        width: 110%;
+    }
+    
+}
