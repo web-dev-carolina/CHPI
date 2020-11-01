@@ -31,16 +31,16 @@ function Navbar() {
                     <a className="mobile-link" href="/">
                         Home
                 </a>
-                    <a className="mobile-link" href="/">
+                    <a className="mobile-link" href="/about">
                         About Us
                 </a>
-                    <a className="mobile-link" href="/">
+                    <a className="mobile-link" href="/homelessness">
                         About Homelessness
                 </a>
-                    <a className="mobile-link" href="/">
+                    <a className="mobile-link" href="/testimonials">
                         Testimonials
                 </a>
-                    <a className="mobile-link" href="/">
+                    <a className="mobile-link" href="/contact">
                         Contact
                 </a>
                 </ul>
