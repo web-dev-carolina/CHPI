@@ -1,4 +1,4 @@
-  .homelessness{
+.homelessness{
     margin-top: 75px;
     position: relative;
     min-height: calc(100vh + 10px);
@@ -9,31 +9,38 @@
     background-size: cover;
     width: 100%;
 }
-.homelessness .wrapper{
+
+.header{
+  margin-bottom: 100px;
+  height: 100vh;
   position: relative;
-  width: 100%;
-  padding: 50px 0 0 0;
-  text-align: center;
+  background-size: cover;
+  background-image: url('https://images.unsplash.com/photo-1518398046578-8cca57782e17?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');
 }
-.homelessness .header{
+.header::before{
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+
+}
+.headerContent{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.homelessness .header h1{
   font-weight: 700;
-  margin-top: 0;
   text-transform: uppercase;
-  font-size: 2.5rem;
-/*  background-color: #F0F0F0;*/
-  padding: 50px 0 50px 0;
+  font-size: 3.5rem;
 }
-.col{
-  border: 1px solid gray;
-}
-.col img{
-width: 100%;
-align-self: center;
-justify-self: center;
-}
-.row{
-  column-gap: 2%;
-}
+
 .about-homelessness-content{
 padding: 5%;
 text-align: left;
@@ -44,4 +51,10 @@ font-size: 2.25rem;
 text-align:  center;
 padding: 2rem;
 }
+.homelessness-background{
+ background-image: url(https://images.squarespace-cdn.com/content/v1/53060d86e4b0b4d1ce2cd253/1467297563539-0DJK6H0HBWEYNRD4TNYC/ke17ZwdGBToddI8pDm48kJJ8XKoYEqfp4LXlwAf18wBZw-zPPgdn4jUwVcJE1ZvWgCjmTad1QpYCGph9EV4QZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PImdd3K1-Fuwx8Lod0_rrjBfrcCjCsDGvnsCQ_24aAN5UKMshLAGzx4R3EDFOm1kBS/slide_franklin_street.jpg);
+}*/
 
+.header{
+  color: white;
+}
