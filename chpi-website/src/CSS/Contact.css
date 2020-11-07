@@ -1,3 +1,14 @@
 .contact {
     margin-top: 75px;
+    margin-bottom: 75px;
+    height: 100%;
+}
+
+.formcontainer {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.secondary-color {
+    background-color: var(--secondary-color);
 }

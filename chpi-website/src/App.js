@@ -8,6 +8,7 @@ import Homelessness from './Component/Homelessness.js';
 import Testimonials from './Component/Testimonials.js';
 import Contact from './Component/Contact.js';
 import Footer from './Component/Footer.js';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
