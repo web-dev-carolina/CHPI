@@ -1,5 +1,4 @@
 .home {
-    margin-top: 0px;
     position: relative;
     min-height: calc(100vh + 10px);
     text-align: center;
@@ -30,10 +29,6 @@
 }
 
 @media screen and (min-width: 760px) {
-
-    .home {
-        background-attachment: fixed;
-    }
     
     .header-content {
         position: absolute;
