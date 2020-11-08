@@ -1,3 +1,114 @@
 .about {
-    margin-top: 75px;
+    
+    position: relative;
+    min-height: calc(100vh + 10px);
+    text-align: center;
+    color: #707070;
+    width: 100%;
+}
+
+.about-title {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 60px;
+    font-size: 2.5rem;
+    background-color: #F0F0F0;
+    padding: 50px 0 120px 0;
+}
+
+.about-header {
+    position: relative;
+    width: 100%;
+    padding: 50px 0 0 0;
+    text-align: center;
+
+}
+
+.about-header-content {
+    background-color: white;
+    padding: 40px 2rem 40px 2rem;
+    font-size: 1.4rem;
+    margin-top: 40px;
+}
+
+.team-container {
+    height: 100%;
+    width: 100%;
+}
+
+.team-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.team-header {
+    font-weight: 700;
+    margin-top: 0;
+    font-size: 2.5rem;
+    padding: 50px 0 25px 0;
+    color: var(--primary-color);
+}
+
+.space {
+    height: 20px;
+    border: none;
+}
+
+.profile {
+    text-decoration: none;
+    list-style-type: none;
+    width: 300px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 7px solid var(--primary-color);
+    vertical-align: middle;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.profile-role {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: none;
+    font-size: 20px;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+@media screen and (min-width: 960px){
+    .about-header-content {
+        background-color: white;
+        padding: 40px 10rem 40px 10rem;
+        margin-top: 40px;
+        font-size: 1.4rem;
+    }
+
+    .team-content {
+        flex-direction: row;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .about-title {
+        width: 100%;
+    }
+
+    .about-header-content, .about-header {
+        width: 100%;
+    }
+    
 }

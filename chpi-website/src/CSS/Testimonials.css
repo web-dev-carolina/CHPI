@@ -1,5 +1,5 @@
 .testimonials {
-    margin-top: 75px;
+    
     position: relative;
     min-height: calc(100vh + 10px);
     text-align: center;
@@ -29,7 +29,7 @@
 }
 
 .content {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     line-height: 2rem;
     padding: 0 6% 15% 6%;
 }
@@ -40,7 +40,7 @@
     }
 
     .content {
-        font-size: 2rem;
+        font-size: 1.4rem;
         padding: 0 20% 10% 20%;
         line-height: 2.2rem;
     }
@@ -48,11 +48,11 @@
 
 @media only screen and (max-width: 320px){
     .title {
-        width: 110%;
+        width: 100%;
     }
 
     .content {
-        width: 110%;
+        width: 100%;
     }
     
 }
