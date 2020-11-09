@@ -36,6 +36,7 @@ function About() {
                                     <h1 className="profile-name">{member.name}</h1>
                                     <p className="profile-role">{member.role}</p>
                                     <a href={member.link}><i className="fab fa-linkedin fa-2x"></i></a>
+                                    <p className="profile-paragraph">{member.paragraph}</p>
                                 </li>
                             ))
                         }
@@ -48,46 +49,51 @@ function About() {
 
 const team = [
     {
-        name: "Michael Scott",
+        name: "Warner Lamar",
+        role: "Director",
+        picture: require("../Images/warnerLamar.png"),
+        link: "",
+        paragraph: "Warner is a sophomore studying computer science from Nashville, TN. After graduation, he hopes to go into software development. His spirit animal is an orangutan. Warner is very passionate about the homeless crisis across the country and strives to make an impact in the town he now calls home. "
+        
+
+    },
+    {
+        name: "Will Douthit",
         role: "President",
-        picture: require("../Images/michael.jpg"),
-        link: ""
+        picture: require("../Images/willDouthit.png"),
+        link: "",
+        paragraph: "Will Douthit is a sophomore from Wilmette, Illinois majoring in Business Administration and minoring in conflict management. He is passionate about determining the various intersections between social responsibility and innovation and is excited to lead the fundraising initiative for homelessness prevention in the greater Orange County area."
+    },
+    {
+        name: "William Goldburg",
+        role: "Financial Chair",
+        picture: require("../Images/williamGoldberg.png"),
+        link: "",
+        paragraph: "William is a Sophomore from Atlanta, Georgia majoring in Economics with a minor in Business and Entrepreneurship. William is excited about his financial role because it lies at an intersection of his academic interests and giving back to the community, especially within homelessness prevention. "
 
     },
     {
-        name: "Dwight Schrute",
-        role: "Vice President",
-        picture: require("../Images/dwight.jpg"),
-        link: ""
-    },
-    {
-        name: "Pam Beesly",
-        role: "VP of Marketing",
-        picture: require("../Images/pam.jpg"),
-        link: ""
-
-    },
-    {
-        name: "Jim Halpert",
-        role: "VP of Events",
-        picture: require("../Images/jim.png"),
-        link: ""
-
-    },
-    {
-        name: "Kevin Malone",
-        role: "Committee Member",
-        picture: require("../Images/kevin.png"),
-        link: ""
-
-    },
-    {
-        name: "Stanley Hudson",
-        role: "Committee Member",
-        picture: require("../Images/stanley.jpg"),
-        link: ""
-
+        name: "Nate Miller",
+        role: "Alumni Outreach",
+        picture: require("../Images/nateMiller.png"),
+        link: "",
+        paragraph: "Nate is a Junior from Denver, Colorado majoring in Business Administration and minoring in Philosophy, Politics, and Economics. Nate is passionate about raising awareness for homeless diversion, and is excited to create an extensive network of passionate UNC alumni."
     }
+    // },
+    // {
+    //     name: "Kevin Malone",
+    //     role: "Committee Member",
+    //     picture: require("../Images/kevin.png"),
+    //     link: ""
+
+    // },
+    // {
+    //     name: "Stanley Hudson",
+    //     role: "Committee Member",
+    //     picture: require("../Images/stanley.jpg"),
+    //     link: ""
+
+    // }
 ]
 
 export default About;
