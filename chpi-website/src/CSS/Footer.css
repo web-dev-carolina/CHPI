@@ -11,6 +11,8 @@
     z-index: 999;  
     padding-left: 10px;
     padding-right: 10px;
+    position: relative;
+    bottom: 0;
 }
 
 .footer p {
