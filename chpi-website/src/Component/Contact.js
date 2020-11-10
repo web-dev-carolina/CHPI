@@ -3,13 +3,24 @@ import '../CSS/Contact.css';
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import 'bootstrap';
-import '../App.css'
+import '../App.css';
+
+
 
 function Contact(){
+
+    // handleSubmit = (event) => {
+    //     event.preventDefault();
+    //     alert("You are submitting!");   
+    // }
+    
+    // on <Form></Form>
+    // onSubmit={this.handleSubmit}
+
     return (
         <div className="contact">
             <Form className="formcontainer">
-            <Form.Group controlId="formBasicName" class="fullname">
+            <Form.Group controlId="formBasicName" className="fullname">
                 <Form.Label>Full Name</Form.Label>
                 <Form.Control type="name" placeholder="Enter full name" />
             </Form.Group>
@@ -37,7 +48,7 @@ function Contact(){
                 <Form.Label>Message</Form.Label>
                 <Form.Control as="textarea" rows={5} />
             </Form.Group>
-            <Button class="secondary-color" type="Message">
+            <Button  id="sumbit-button"  className="secondary-color" type="submit">
                 Submit
             </Button>
             </Form>
