@@ -3,7 +3,6 @@ import '../CSS/Contact.css';
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import 'bootstrap';
-import ScriptTag from 'react-script-tag';
 import '../App.css'
 import firebase from 'firebase';
 
