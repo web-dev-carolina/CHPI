@@ -81,21 +81,26 @@ var firebaseConfig = {
   // handle submit fn should get name,email,subject,message through document.getElementById.innerHTML
   // pass these values into firebasePush()
 
-  function handleChange(event){
-
-  };
 
   function handleSubmit(event){
       alert("SUBMITTED!");
       console.log("handling submit request")
-      //console.log(document.getElementById("formBasicName").innerHTML)
+      var nameValue = document.getElementById("formBasicName").value;
+      var emailValue = document.getElementById("formBasicEmail").value;
+      var subjectValue = document.getElementById("exampleForm.ControlSelect1").value;
+      var messageValue = document.getElementById("formBasicMessage").value;
+
+      //console.log(nameValue);
+      //console.log(emailValue);
+      //console.log(subjectValue);
+      //console.log(messageValue);
+
+      firebasePush(nameValue, emailValue, subjectValue, messageValue);
+
       event.preventDefault();
   };
 
-  var nameValue;
-  var emailValue;
-  var subjectValue;
-  var messageValue;
+
 
 
 export default Contact;
