@@ -13,24 +13,27 @@ function Testimonials() {
                 <div className="content">
                     <Carousel>
                         <Carousel.Item>
-                            A UNC student-founded platform to keep Chapel Hill's most vulnerable residents from becoming homeless and to educate the UNC community about the underlying causes of mass homelessness.
-                            In Chapel Hill, we are the only source of diversion funding - the most immediate and research-backed means to prevent homelessness.
+                        The Carolina Homelessness Prevention Initiative has been a wonderful organization to work with. They provide a great service for the 
+                        community and are extremely professional in how they run their organization. We are grateful for the impact that they have made in our community 
+                        and are looking forward to continuing our partnership.
                         <Carousel.Caption>
-                                <h3>- Non Anonymous Person</h3>
+                                <h3></h3>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            A UNC student-founded platform to keep Chapel Hill's most vulnerable residents from becoming homeless and to educate the UNC community about the underlying causes of mass homelessness.
-                            In Chapel Hill, we are the only source of diversion funding - the most immediate and research-backed means to prevent homelessness.
+                        CHPI is a phenomenal organization. They provide a niche service and have mastered their craft. 
+                        We appreciate everything they have done for us and are excited for what the future of our relationship will look like.
                         <Carousel.Caption>
-                                <h3>- Non Anonymous Person</h3>
+                                <h3></h3>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            A UNC student-founded platform to keep Chapel Hill's most vulnerable residents from becoming homeless and to educate the UNC community about the underlying causes of mass homelessness.
-                            In Chapel Hill, we are the only source of diversion funding - the most immediate and research-backed means to prevent homelessness.
+                        The impact that the Carolina Homelessness Prevention Initiative has had on the local Chapel Hill community has been astonishing. 
+                        We have seen the diversion rate drop significantly since they were established, and the trend is likely to continue. 
+                        CHPI has also played a large role in helping mitigate the negative effects of COVID-19 in homelessness and have provided 
+                        much needed support for this community during these tough times.
                         <Carousel.Caption>
-                                <h3>- Non Anonymous Person</h3>
+                                <h3></h3>
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
