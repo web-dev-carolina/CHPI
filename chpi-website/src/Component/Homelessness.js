@@ -149,6 +149,8 @@ export default function Homelessness(){
                         </Col>
                     </Row>
                 </Container>
+
+                
                 <div className = "about-homelessness-content">
                     <div id = "hich">
                         <h1>Homelessness in Chapel Hill</h1>
