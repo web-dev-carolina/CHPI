@@ -40,7 +40,7 @@ function Contact(){
                 <Form.Label>Message</Form.Label>
                 <Form.Control as="textarea" rows={5} />
             </Form.Group>
-            <Button id="contact-submit" className="secondary-color" >
+            <Button id="contact-submit" onClick={handleSubmit} className="secondary-color" >
                 Submit
             </Button>
             </Form>
@@ -80,4 +80,22 @@ var firebaseConfig = {
   //TODO: addEvent listener to submit, with handleSubmit fn
   // handle submit fn should get name,email,subject,message through document.getElementById.innerHTML
   // pass these values into firebasePush()
+
+  function handleChange(event){
+
+  };
+
+  function handleSubmit(event){
+      alert("SUBMITTED!");
+      console.log("handling submit request")
+      //console.log(document.getElementById("formBasicName").innerHTML)
+      event.preventDefault();
+  };
+
+  var nameValue;
+  var emailValue;
+  var subjectValue;
+  var messageValue;
+
+
 export default Contact;
