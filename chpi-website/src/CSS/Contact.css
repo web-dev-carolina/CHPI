@@ -14,3 +14,11 @@
 .secondary-color {
     background-color: var(--secondary-color);
 }
+
+#contact-submit {
+    background-color: var(--secondary-color);
+}
+
+#contact-submit:hover {
+    filter: brightness(150%);
+}
