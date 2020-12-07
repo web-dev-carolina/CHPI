@@ -13,12 +13,12 @@ function Contact(){
         <div className="contact">
             <Form className="formcontainer">
             <Form.Group controlId="formBasicName" className="fullname">
-                <Form.Label>Full Name</Form.Label>
-                <Form.Control type="name" placeholder="Enter full name" />
+                <Form.Label>Full Name *</Form.Label>
+                <Form.Control  type="name" placeholder="Enter full name" />
             </Form.Group>
 
             <Form.Group controlId="formBasicEmail">
-                <Form.Label>Email</Form.Label>
+                <Form.Label>Email *</Form.Label>
                 <Form.Control type="email" placeholder="Email" />
                 <Form.Text className="text-muted">
                 We'll never share your email with anyone else.
@@ -26,7 +26,7 @@ function Contact(){
             </Form.Group>
 
             <Form.Group controlId="exampleForm.ControlSelect1">
-                <Form.Label>Subject</Form.Label>
+                <Form.Label>Subject *</Form.Label>
                 <Form.Control as="select">
                     <option>Select a Topic</option>
                     <option>Get Involved</option>
@@ -37,7 +37,7 @@ function Contact(){
             </Form.Group>
 
             <Form.Group controlId="formBasicMessage">
-                <Form.Label>Message</Form.Label>
+                <Form.Label>Message *</Form.Label>
                 <Form.Control as="textarea" rows={5} />
             </Form.Group>
             <Button id="contact-submit" onClick={handleSubmit} className="secondary-color" >
@@ -83,19 +83,48 @@ var firebaseConfig = {
 
 
   function handleSubmit(event){
-      alert("SUBMITTED!");
+      
       console.log("handling submit request")
       var nameValue = document.getElementById("formBasicName").value;
       var emailValue = document.getElementById("formBasicEmail").value;
       var subjectValue = document.getElementById("exampleForm.ControlSelect1").value;
       var messageValue = document.getElementById("formBasicMessage").value;
 
-      //console.log(nameValue);
-      //console.log(emailValue);
-      //console.log(subjectValue);
-      //console.log(messageValue);
+      console.log("Name: " + nameValue);
+      console.log(typeof nameValue);
 
-      firebasePush(nameValue, emailValue, subjectValue, messageValue);
+      console.log("Email: " + emailValue);
+      console.log(typeof emailValue);
+
+      console.log("Subject: " + subjectValue);
+      console.log(typeof subjectValue);
+
+      console.log("Message: " + messageValue);
+      console.log(typeof messageValue);
+
+      if(nameValue == ''){
+        alert("Name Required");
+        return;
+      }
+
+      if(emailValue == ''){
+          alert("Email Required");
+          return;
+      }
+
+      if(subjectValue == 'Select a Topic'){
+          alert("Subject Required");
+          return;
+      }
+
+      if(messageValue == ''){
+          alert("Message Required");
+          return;
+      }
+
+        alert("SUBMITTED!");
+        console.log("pushing to firebase");
+       firebasePush(nameValue, emailValue, subjectValue, messageValue);
 
       event.preventDefault();
   };
