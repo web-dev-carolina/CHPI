@@ -5,7 +5,6 @@ import Button from 'react-bootstrap/Button'
 import 'bootstrap';
 import '../App.css'
 import firebase from 'firebase';
-
 function Contact(){
     return (
         <div>
