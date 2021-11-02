@@ -10,7 +10,7 @@ function Navbar() {
     function handleButtonClick() {
         toggleOpen(!open);
     };
- 
+
     return (
         <div className="navbar">
             <div className="navbar-section">
@@ -22,6 +22,7 @@ function Navbar() {
                     <Link id="right-border" className="link" to="/about">About Us</Link>
                     <Link id="right-border" className="link" to="/homelessness">About Homelessness</Link>
                     <Link id="right-border" className="link" to="/testimonials">Testimonials</Link>
+                    <Link id="right-border" className="link" to="/donate">Donate</Link>
                     <Link className="link" to="/contact">Contact</Link>
                     <div className="mobile" onClick={handleButtonClick}>
                         <i className={open ? 'fas fa-times fa-lg' : 'fas fa-bars fa-lg'}></i>
@@ -30,19 +31,22 @@ function Navbar() {
                 <ul className={open ? 'nav-menu active' : 'nav-menu'}>
                     <a className="mobile-link" href="/">
                         Home
-                </a>
+                    </a>
                     <a className="mobile-link" href="/about">
                         About Us
-                </a>
+                    </a>
                     <a className="mobile-link" href="/homelessness">
                         About Homelessness
-                </a>
+                    </a>
                     <a className="mobile-link" href="/testimonials">
                         Testimonials
-                </a>
+                    </a>
+                    <a className="mobile-link" href="/donate">
+                        Donate
+                    </a>
                     <a className="mobile-link" href="/contact">
                         Contact
-                </a>
+                    </a>
                 </ul>
 
             </div>

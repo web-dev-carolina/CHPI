@@ -8,6 +8,7 @@ import Homelessness from './Component/Homelessness.js';
 import Testimonials from './Component/Testimonials.js';
 import Contact from './Component/Contact.js';
 import Footer from './Component/Footer.js';
+import Donate from './Component/Donate.js';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Homelessness" component={Homelessness} />
         <Route path="/Testimonials" component={Testimonials} />
         <Route path="/Contact" component={Contact} />
+        <Route path="/Donate" component={Donate} />
       </Switch>
 
       <Footer />
