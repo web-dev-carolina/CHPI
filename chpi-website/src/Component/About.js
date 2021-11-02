@@ -52,7 +52,7 @@ const team = [
         name: "Warner Lamar",
         role: "Director",
         picture: require("../Images/warnerLamar.png"),
-        link: "",
+        link: "https://www.linkedin.com/in/warner-lamar/",
         paragraph: "Warner is a sophomore studying computer science from Nashville, TN. After graduation, he hopes to go into software development. His spirit animal is an orangutan. Warner is very passionate about the homeless crisis across the country and strives to make an impact in the town he now calls home. "
         
 
@@ -61,14 +61,14 @@ const team = [
         name: "Will Douthit",
         role: "President",
         picture: require("../Images/willDouthit.png"),
-        link: "",
+        link: "https://www.linkedin.com/in/william-douthit-001565175/",
         paragraph: "Will Douthit is a sophomore from Wilmette, Illinois majoring in Business Administration and minoring in conflict management. He is passionate about determining the various intersections between social responsibility and innovation and is excited to lead the fundraising initiative for homelessness prevention in the greater Orange County area."
     },
     {
         name: "William Goldburg",
         role: "Financial Chair",
         picture: require("../Images/williamGoldberg.png"),
-        link: "",
+        link: "https://www.linkedin.com/in/williamagoldberg/",
         paragraph: "William is a Sophomore from Atlanta, Georgia majoring in Economics with a minor in Business and Entrepreneurship. William is excited about his financial role because it lies at an intersection of his academic interests and giving back to the community, especially within homelessness prevention. "
 
     },
@@ -76,7 +76,7 @@ const team = [
         name: "Nate Miller",
         role: "Alumni Outreach",
         picture: require("../Images/nateMiller.png"),
-        link: "",
+        link: "https://www.linkedin.com/in/nate-miller-6ab793162/",
         paragraph: "Nate is a Junior from Denver, Colorado majoring in Business Administration and minoring in Philosophy, Politics, and Economics. Nate is passionate about raising awareness for homeless diversion, and is excited to create an extensive network of passionate UNC alumni."
     }
     // },

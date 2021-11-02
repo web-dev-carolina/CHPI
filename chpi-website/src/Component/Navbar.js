@@ -10,7 +10,7 @@ function Navbar() {
     function handleButtonClick() {
         toggleOpen(!open);
     };
-
+ 
     return (
         <div className="navbar">
             <div className="navbar-section">

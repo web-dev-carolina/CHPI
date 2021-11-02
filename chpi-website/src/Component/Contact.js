@@ -5,6 +5,8 @@ import Button from 'react-bootstrap/Button'
 import 'bootstrap';
 import '../App.css'
 import firebase from 'firebase';
+import { Axios, db } from '../firebase/firebaseConfig'
+
 function Contact(){
     return (
         <div>
@@ -12,12 +14,12 @@ function Contact(){
         <div className="contact">
             <Form className="formcontainer">
             <Form.Group controlId="formBasicName" className="fullname">
-                <Form.Label>Full Name</Form.Label>
-                <Form.Control type="name" placeholder="Enter full name" />
+                <Form.Label>Full Name *</Form.Label>
+                <Form.Control  type="name" placeholder="Enter full name" />
             </Form.Group>
 
             <Form.Group controlId="formBasicEmail">
-                <Form.Label>Email</Form.Label>
+                <Form.Label>Email *</Form.Label>
                 <Form.Control type="email" placeholder="Email" />
                 <Form.Text className="text-muted">
                 We'll never share your email with anyone else.
@@ -25,7 +27,7 @@ function Contact(){
             </Form.Group>
 
             <Form.Group controlId="exampleForm.ControlSelect1">
-                <Form.Label>Subject</Form.Label>
+                <Form.Label>Subject *</Form.Label>
                 <Form.Control as="select">
                     <option>Select a Topic</option>
                     <option>Get Involved</option>
@@ -36,7 +38,7 @@ function Contact(){
             </Form.Group>
 
             <Form.Group controlId="formBasicMessage">
-                <Form.Label>Message</Form.Label>
+                <Form.Label>Message *</Form.Label>
                 <Form.Control as="textarea" rows={5} />
             </Form.Group>
             <Button id="contact-submit" onClick={handleSubmit} className="secondary-color" >
@@ -51,54 +53,87 @@ function Contact(){
     )
 }
 //do not change
-var firebaseConfig = {
-    apiKey: "AIzaSyDBuOlw9NFZ5-P6uEJMRnc5nIR6SC3O8EY",
-    authDomain: "chpi-contact.firebaseapp.com",
-    databaseURL: "https://chpi-contact.firebaseio.com",
-    projectId: "chpi-contact",
-    storageBucket: "chpi-contact.appspot.com",
-    messagingSenderId: "417414018305",
-    appId: "1:417414018305:web:0c72d7e428a90a4ecf5700"
-  };
-  firebase.initializeApp(firebaseConfig);
-  // Write to databse
-  function firebasePush(name, email, subject, message) {
-    // Ensures firebase is initialized 
-    if(!firebase.apps.length){
-      firebase.initializeApp(firebaseConfig);
-    }
-    // adds to contact dataset 
-    firebase.database().ref('contact').push().set(
-    {
-        name,
-        email,
-        subject,
-        message,
-    });
-  }
+
+
   //TODO: addEvent listener to submit, with handleSubmit fn
   // handle submit fn should get name,email,subject,message through document.getElementById.innerHTML
   // pass these values into firebasePush()
 
 
   function handleSubmit(event){
-      alert("SUBMITTED!");
+      event.preventDefault();
+
       console.log("handling submit request")
       var nameValue = document.getElementById("formBasicName").value;
       var emailValue = document.getElementById("formBasicEmail").value;
       var subjectValue = document.getElementById("exampleForm.ControlSelect1").value;
       var messageValue = document.getElementById("formBasicMessage").value;
 
-      //console.log(nameValue);
-      //console.log(emailValue);
-      //console.log(subjectValue);
-      //console.log(messageValue);
 
-      firebasePush(nameValue, emailValue, subjectValue, messageValue);
 
-      event.preventDefault();
+    //   console.log("Name: " + nameValue);
+    //   console.log(typeof nameValue);
+
+    //   console.log("Email: " + emailValue);
+    //   console.log(typeof emailValue);
+
+    //   console.log("Subject: " + subjectValue);
+    //   console.log(typeof subjectValue);
+
+    //   console.log("Message: " + messageValue);
+    //   console.log(typeof messageValue);
+
+      if(nameValue == ''){
+        alert("Name Required");
+        return;
+      }
+
+      if(emailValue == ''){
+          alert("Email Required");
+          return;
+      }
+
+      if(subjectValue == 'Select a Topic'){
+          alert("Subject Required");
+          return;
+      }
+
+      if(messageValue == ''){
+          alert("Message Required");
+          return;
+      }
+
+        
+        console.log("pushing to firebase");
+       //firebasePush(nameValue, emailValue, subjectValue, messageValue);
+
+       sendEmail(nameValue, emailValue, subjectValue, messageValue);
+
   };
 
+  function sendEmail(name, email, subject, message) {
+      console.log({
+        name, email, message, subject
+    });
+    Axios.post(
+        'https://us-central1-chpi-contact.cloudfunctions.net/submit',
+        {
+            name, email, message, subject
+        }
+      )
+        .then(res => {
+        //   db.collection('emails').add({
+        //     Name: name,
+        //     Email: email,
+        //     Message: message,
+        //     Subject: subject,
+        //   })
+        console.log("SUCCESS!");
+        })
+        .catch(error => {
+          console.log(error)
+        })
+  }
 
 
 
