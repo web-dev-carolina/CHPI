@@ -6,35 +6,35 @@ const Donate = () => {
 
     const donation_links = [
         {
-            link: "https://dashboard.stripe.com/payment-links/plink_1JrTN6FkHkn4W84EMuOv6TOi",
+            link: "https://buy.stripe.com/8wM14gglPgFPaDS7sA",
             amount: 100,
             recurring: true,
         }, {
-            link: "https://dashboard.stripe.com/payment-links/plink_1JrTMQFkHkn4W84EPGyuyYOp",
+            link: "https://buy.stripe.com/3csfZa0mRahr4fu6ov",
             amount: 50,
             recurring: true,
         }, {
-            link: "https://dashboard.stripe.com/payment-links/plink_1JrTLsFkHkn4W84ERZZ8OJiC",
+            link: "https://buy.stripe.com/dR600cglP4X7bHWeV0",
             amount: 25,
             recurring: true,
         }, {
-            link: "https://dashboard.stripe.com/payment-links/plink_1JrTLMFkHkn4W84E69Q4Aslq",
+            link: "https://buy.stripe.com/14k6oAglP0GRdQ428d",
             amount: 10,
             recurring: true,
         }, {
-            link: "https://dashboard.stripe.com/payment-links/plink_1JrTK1FkHkn4W84ExOFayZUw",
+            link: "https://buy.stripe.com/4gw3coedHcpz9zO9AE",
             amount: 100,
             recurring: false,
         }, {
-            link: "https://dashboard.stripe.com/payment-links/plink_1JrTInFkHkn4W84EItxSfQiR",
+            link: "https://buy.stripe.com/7sI14gglPahrfYccMP",
             amount: 50,
             recurring: false,
         }, {
-            link: "https://dashboard.stripe.com/payment-links/plink_1JrTE2FkHkn4W84Em0G60hty",
+            link: "https://buy.stripe.com/7sI28kedH9dnaDS28a",
             amount: 25,
             recurring: false,
         }, {
-            link: "https://dashboard.stripe.com/payment-links/plink_1JrT9MFkHkn4W84Evf0GE3bg",
+            link: "https://buy.stripe.com/dR600c0mR4X7h2g9AA",
             amount: 10,
             recurring: false,
         }
